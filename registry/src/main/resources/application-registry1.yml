@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+#     这里用localhost竟然无法互相注册~可能跟机子hosts配置有关吧,client端配置多个注册中心，但是只会成功注册一个，所以需要注册中心互相注册
+      defaultZone: http://127.0.0.1:8762/eureka/
+

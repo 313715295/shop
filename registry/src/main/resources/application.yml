@@ -1,0 +1,12 @@
+eureka:
+  server:
+#  开发环境先关闭自我保护模式
+    enable-self-preservation: false
+  client:
+#   不注册自己
+    register-with-eureka: false
+spring:
+  application:
+    name: registry
+
+
